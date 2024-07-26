@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Modern:wght@100..400&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(#051937,#A8EB12);
+}
+
+h1{
+    font-size: 2rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+    font-size: 25;
+}
+/*BARRA DE NAVEGACION*/
+.header{
+    background-color:  #1C2833;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .links{
+    list-style: none;
+}
+
+.header .links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header .links li:hover{
+    transform: scale(1.1);
+}
+
+.header .links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .links li a:hover{
+    color: aqua;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 0px 25px;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: aqua;
+    transform: scale(1.1);
+}
+/*BARRA DE NAVEGACION*/
+/*BARRA DE SEPARACION*/
+.barra {
+    background-color: black;
+    height: 10px;
+    width: auto;
+}
+
+/*BARRA DE SEPARACION*/
+/*CONTENIDO*/
+.contenedor {
+    background: #E5E8E8; 
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.contenedorInterno{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.categoria{
+    display: flex;
+    background: #f1f1f1;
+    padding: 10px;
+    border-bottom: solid 1.5px black ;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.enviar-derecha{
+    margin-left: auto;
+}
+
+article img{
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+article img:hover{
+    transform: scale(1.04);
+}
+
+/*FLECHAS PARA EL CAMBIO DE PAGINA*/
+.flechas{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    border-top: solid 2px #e9e9e9;
+}
+
+.flechas div{
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.flechas img{
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.flechas img:hover{
+    transform: scale(1.1);
+}
+/*FLECHAS PARA EL CAMBIO DE PAGINA*/
+/*ASIDE BARRA LATERAl*/
+aside {
+    width: 300px;
+    padding: 10px;
+    background-color: #aeaeae;
+}
+
+
+.articuloRelacionado{
+    color: #ffffff;
+    width: 280px;
+    background: #3cb2c8;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 6px;
+    transition: all .2s;
+}
+
+.articuloRelacionado:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 5px 0px #777;
+}
+/*ASIDE BARRA LATERAl*/
+/*PIE DE PAGINA*/
+#footer{
+    background-color: #1C2833;
+    color: #ffffff;
+}
+
+footer{
+    display: flex;
+    max-width: 1100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: space-between;
+}
+/*PIE DE PAGINA*/
